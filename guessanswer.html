@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Личный сайт студента GeekBrains</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+	function guessNumber(){
+		var answer = Math.floor(Math.random() * 100) + 1;
+	alert('Игра Угадайка. Я загодал число от 1 до 100. Попробуй угадай!');
+	
+	var userAnswer = parseInt(prompt('Введите число от 1 до 100'));
+	if( (answer>=1) && (answer <=100) ){
+
+		if(answer == userAnswer){
+			alert('Вы Охрененны!');
+		} else if( answer > userAnswer){
+			alert('Не угадали! Ваше число слишком маленькое');
+		} else {
+			alert('Не угадали! Ваше число слишком большое!');
+		}
+
+	} else {
+		alert('Ну я же просил, число от 1 до 100!!!')
+		}
+	}
+</script>>
+
+
+</head>
+<body>
+
+<div id="tooplate_body_wrapper" />
+<div id="tooplate_wrapper" />
+<div id="tooplate_header">
+	<div id="site_title">
+		<h1><a href="http://geekbrains.ru">GeekBrains</a></h1>
+	</div>
+	<div id="tooplate_menu">
+		<ul>
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="puzzle.html">Загадки</a></li>
+			<li><a href="guessanswer.html">Угадайка</a></li>
+		</ul>    	
+	</div>
+</div>
+    
+<div id="content_box">
+		
+	<div id="content_title">
+		<h2>Игра Угудайка!</h2>
+	</div>
+	<div id="content">
+		
+		<h3>Отгадай число, которое загадал компьютер.</h3>  
+
+		<p>Компьютер загадал случайное число от 1 до 100. Вам необходимо его угадать.<p/>
+				
+		</br>
+		
+		<p>Если число слишком мало или велико компьютер сообщит Вам об этом! Следите за подсказками.<p/>
+		
+
+		</br></br></br>
+
+		<input type="button" value="Старт!" onClick="guessNumber()"/>
+
+	</div>
+           
+    <div id="tooplate_footer">    
+        Copyright © 2016 <a href="http://geekbrains.ru">GeekBrains</a>
+    </div>
+    
+</div> <!-- end of warpper -->
+
+</body>
+</html>
